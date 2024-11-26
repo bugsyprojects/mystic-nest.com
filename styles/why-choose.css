@@ -1,0 +1,145 @@
+/* Секция "Why Choose Mystic-Nest?" */
+.why-choose {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .why-header {
+    margin-bottom: 40px;
+  }
+  
+  .why-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .why-description {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+  }
+  
+  /* Карточки преимуществ */
+  .why-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Адаптивность */
+    gap: 20px;
+  }
+  
+  .feature-card {
+    flex: 1 1 calc(33.33% - 20px); /* Равное деление карточек */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-text {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .why-features {
+      flex-direction: column; /* Карточки в колонку */
+      gap: 30px;
+    }
+  }
+  
+
+
+
+
+
+
+  /* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    flex: 1 1 50%;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .about-image {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .about-us {
+      flex-direction: column;
+    }
+  
+    .about-content,
+    .about-image {
+      flex: 1 1 100%;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  }
+  

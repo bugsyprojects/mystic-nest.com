@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" sizes="32x32" href="/assets/icons/logo.png" type="image/png">
+
+
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/why-choose.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/kookie.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/game.css" />
+    <title>Best Free Social Casino Game</title>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="mystic-play-section">
+        <div class="mystic-container">
+          <div class="mystic-game-play">
+            <!-- Заголовок -->
+            <h1 class="mystic-play-title">Dive Into Free Slot Fun</h1>
+      
+            <!-- Фрейм игры -->
+            <div class="mystic-play-frame">
+              <object data="/game/game.html" rel="nofollow" height="600" width="768"></object>
+            </div>
+      
+            <!-- Описание -->
+            <div class="mystic-play-description">
+              <p>
+                All games on Mystic-Nest are designed for adults aged 18 and above. Our games are purely for entertainment purposes and do not offer real money, prizes, or gifts. Tokens and credits earned are virtual and cannot be redeemed or exchanged for money.
+              </p>
+              <p>
+                Experience high-quality, fantasy-inspired slot games for free on any device. Mystic-Nest constantly adds new titles to ensure every visit is a fresh and exciting adventure.
+              </p>
+              <p>
+                Please note: playing free slots on this site does not guarantee success in real-money gambling. We encourage responsible gaming and offer an engaging experience without any financial risk.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script>
+      // Перевіряємо, чи є параметр success у URL
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("success") === "1") {
+        alert("Повідомлення відправлено успішно! Дякуємо за ваш контакт.");
+        // Після показу повідомлення, видаляємо параметр із URL
+        history.replaceState(null, null, window.location.pathname);
+      } else if (urlParams.get("success") === "0") {
+        alert("Виникла помилка при відправці повідомлення. Спробуйте ще раз.");
+        history.replaceState(null, null, window.location.pathname);
+      }
+    </script>
+  </body>
+</html>

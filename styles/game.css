@@ -1,0 +1,56 @@
+/* Mystic-Nest Play Section */
+.mystic-play-section {
+  padding: 160px 20px;
+  background-color: #fefefe; /* Clean white background */
+}
+
+.mystic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mystic-game-play {
+  text-align: center;
+}
+
+.mystic-play-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mystic-play-frame {
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mystic-play-description {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.mystic-play-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mystic-play-title {
+    font-size: 2rem;
+  }
+
+  .mystic-play-description p {
+    font-size: 0.9rem;
+  }
+}

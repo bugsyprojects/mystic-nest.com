@@ -1,0 +1,313 @@
+/* Общие стили для контейнера */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+
+/* Hero Section */
+.hero {
+  background-color: #ffffff; /* Белый фон */
+  padding-top: 180px;
+  
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.hero-content {
+  flex: 1 1 50%; 
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333; 
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #666666; 
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff; 
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3; 
+}
+
+
+.hero-image {
+  flex: 1 1 50%; 
+  max-width: 400px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+
+}
+
+
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .hero-content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+/* Секция "About Us" */
+.about-us {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Заголовок и описание */
+.about-header {
+  margin-bottom: 40px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Карточки преимуществ */
+.about-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Адаптивность */
+  gap: 20px;
+}
+
+.feature-card {
+  flex: 1 1 calc(33.33% - 20px); /* Равное деление карточек */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .about-features {
+    flex-direction: column; /* Карточки в колонку */
+    gap: 30px;
+  }
+}
+
+
+
+
+
+
+/* Общие стили */
+.how-it-works {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.how-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.how-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.how-step {
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.how-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.how-icon {
+  font-size: 3rem;
+  color: #ff8800;
+  margin-bottom: 15px;
+}
+
+.how-step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.how-step-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .how-grid {
+    flex-direction: column;
+  }
+
+  .how-step {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+/* Disclaimer Section */
+.disclaimer {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-top: 2px solid #e0e0e0;
+}
+
+.disclaimer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.disclaimer-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.age-icon {
+  font-size: 2rem;
+  color: #e63946; /* Red for emphasis */
+}
+
+.disclaimer-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.disclaimer-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .disclaimer-title {
+    font-size: 1.8rem;
+  }
+
+  .disclaimer-text {
+    font-size: 0.9rem;
+  }
+}

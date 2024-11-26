@@ -1,0 +1,72 @@
+/* Mystic-Nest Privacy Policy Section */
+.mystic-policy-section {
+  padding: 160px 20px;
+  background-color: #f8f9fa; /* Light gray for better readability */
+}
+
+.mystic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mystic-policy-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mystic-policy-content {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.mystic-policy-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.mystic-policy-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #444;
+
+}
+
+.mystic-policy-list {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mystic-policy-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mystic-policy-title {
+    font-size: 2rem;
+  }
+
+  .mystic-policy-content {
+    font-size: 0.9rem;
+  }
+}
